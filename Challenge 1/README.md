@@ -23,7 +23,7 @@ A text file, containing in each line
 - the day of the week of ending time (assuming we're prescient and know when the games end)
 - the ending time (also in Military time)
 
-Create a function that outputs an array of the 
+Create a function that outputs an array of the matchup names in the order Carson should watch.
 
 For example,
 
