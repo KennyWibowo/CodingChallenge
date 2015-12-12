@@ -18,18 +18,19 @@ Given input of:
 A text file, containing in each line
 - a matchup name, followed by in CSV format:
 - the number of games in the matchup
-- the day of the week (in integer format, 0 = Sunday, 1 = Tuesday, 2 = Wednesday...)
-- the starting time (in Military time)
-- the ending time (assuming we're prescient and know when the games end)
+- the day of the week of starting time (in integer format, 0 = Sunday, 1 = Tuesday, 2 = Wednesday...)
+- the starting time (in Military time, 0-2400)
+- the day of the week of ending time (assuming we're prescient and know when the games end)
+- the ending time (also in Military time)
 
 Create a function that outputs an array of the 
 
 For example,
 
 ```
-SKT vs paiN,3,0,500,800
-TSM vs Team8,5,0,799,801
-ISABULL vs CLG,3,0,800,1100
+SKT vs paiN,3,0,500,0,800
+TSM vs Team8,5,0,799,0,801
+ISABULL vs CLG,3,0,800,0,1100
 ```
 
 Will output
